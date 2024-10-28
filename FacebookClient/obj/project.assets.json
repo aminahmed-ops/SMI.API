@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LogicWisp-Projects\\Social Media\\FacebookClient\\FacebookClient.csproj",
+      "projectUniqueName": "D:\\Git\\LogicWisp Projects\\SMI.API\\FacebookClient\\FacebookClient.csproj",
       "projectName": "FacebookClient",
-      "projectPath": "D:\\LogicWisp-Projects\\Social Media\\FacebookClient\\FacebookClient.csproj",
+      "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\FacebookClient\\FacebookClient.csproj",
       "packagesPath": "C:\\Users\\Amin Ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\LogicWisp-Projects\\Social Media\\FacebookClient\\obj\\",
+      "outputPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\FacebookClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

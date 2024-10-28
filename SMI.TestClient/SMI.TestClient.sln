@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMI.TestClient", "SMI.TestClient.csproj", "{FCD83A61-2089-4EEE-A31C-8279AC92835D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDKs", "SDKs", "{DE903B2F-45CA-4245-B32D-0783CFB5130A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacebookClient", "..\FacebookClient\FacebookClient.csproj", "{BAD967D3-8D69-4782-8446-0496C0918F20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMI.API", "..\SocialMediaAPI\SMI.API.csproj", "{D13F7A2B-2D29-4277-9DFE-DE87D81A6782}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMI.Entities", "..\Entities\SMI.Entities.csproj", "{42078740-D251-4418-8FD0-61111CC90BB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMI.BusinessLogic", "..\BusinessLogic\SMI.BusinessLogic.csproj", "{37EEF1BD-9CB5-4D05-A36B-27A29C77461D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMI.DataAccess", "..\Repository\SMI.DataAccess.csproj", "{428F435B-700A-489A-BB5F-0FCBC5C83DB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMI.TestClient", "SMI.TestClient.csproj", "{FCD83A61-2089-4EEE-A31C-8279AC92835D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +23,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAD967D3-8D69-4782-8446-0496C0918F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD967D3-8D69-4782-8446-0496C0918F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD967D3-8D69-4782-8446-0496C0918F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD967D3-8D69-4782-8446-0496C0918F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D13F7A2B-2D29-4277-9DFE-DE87D81A6782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D13F7A2B-2D29-4277-9DFE-DE87D81A6782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D13F7A2B-2D29-4277-9DFE-DE87D81A6782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D13F7A2B-2D29-4277-9DFE-DE87D81A6782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42078740-D251-4418-8FD0-61111CC90BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42078740-D251-4418-8FD0-61111CC90BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42078740-D251-4418-8FD0-61111CC90BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42078740-D251-4418-8FD0-61111CC90BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EEF1BD-9CB5-4D05-A36B-27A29C77461D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EEF1BD-9CB5-4D05-A36B-27A29C77461D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EEF1BD-9CB5-4D05-A36B-27A29C77461D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EEF1BD-9CB5-4D05-A36B-27A29C77461D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428F435B-700A-489A-BB5F-0FCBC5C83DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428F435B-700A-489A-BB5F-0FCBC5C83DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428F435B-700A-489A-BB5F-0FCBC5C83DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428F435B-700A-489A-BB5F-0FCBC5C83DB4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FCD83A61-2089-4EEE-A31C-8279AC92835D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FCD83A61-2089-4EEE-A31C-8279AC92835D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCD83A61-2089-4EEE-A31C-8279AC92835D}.Release|Any CPU.ActiveCfg = Release|Any CPU

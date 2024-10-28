@@ -67,11 +67,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LogicWisp-Projects\\Social Media\\BusinessLogic\\SMI.BusinessLogic.csproj",
+      "projectUniqueName": "D:\\Git\\LogicWisp Projects\\SMI.API\\BusinessLogic\\SMI.BusinessLogic.csproj",
       "projectName": "SMI.BusinessLogic",
-      "projectPath": "D:\\LogicWisp-Projects\\Social Media\\BusinessLogic\\SMI.BusinessLogic.csproj",
+      "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\BusinessLogic\\SMI.BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\Amin Ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\LogicWisp-Projects\\Social Media\\BusinessLogic\\obj\\",
+      "outputPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,11 +93,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\LogicWisp-Projects\\Social Media\\FacebookClient\\FacebookClient.csproj": {
-              "projectPath": "D:\\LogicWisp-Projects\\Social Media\\FacebookClient\\FacebookClient.csproj"
+            "D:\\Git\\LogicWisp Projects\\SMI.API\\FacebookClient\\FacebookClient.csproj": {
+              "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\FacebookClient\\FacebookClient.csproj"
             },
-            "D:\\LogicWisp-Projects\\Social Media\\Repository\\SMI.DataAccess.csproj": {
-              "projectPath": "D:\\LogicWisp-Projects\\Social Media\\Repository\\SMI.DataAccess.csproj"
+            "D:\\Git\\LogicWisp Projects\\SMI.API\\Repository\\SMI.DataAccess.csproj": {
+              "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Repository\\SMI.DataAccess.csproj"
             }
           }
         }

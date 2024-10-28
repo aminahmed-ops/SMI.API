@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LogicWisp-Projects\\Social Media\\Entities\\SMI.Entities.csproj",
+      "projectUniqueName": "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\SMI.Entities.csproj",
       "projectName": "SMI.Entities",
-      "projectPath": "D:\\LogicWisp-Projects\\Social Media\\Entities\\SMI.Entities.csproj",
+      "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\SMI.Entities.csproj",
       "packagesPath": "C:\\Users\\Amin Ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\LogicWisp-Projects\\Social Media\\Entities\\obj\\",
+      "outputPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

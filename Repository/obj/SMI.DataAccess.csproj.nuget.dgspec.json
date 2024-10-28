@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LogicWisp-Projects\\Social Media\\Repository\\SMI.DataAccess.csproj": {}
+    "D:\\Git\\LogicWisp Projects\\SMI.API\\Repository\\SMI.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\LogicWisp-Projects\\Social Media\\Entities\\SMI.Entities.csproj": {
+    "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\SMI.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LogicWisp-Projects\\Social Media\\Entities\\SMI.Entities.csproj",
+        "projectUniqueName": "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\SMI.Entities.csproj",
         "projectName": "SMI.Entities",
-        "projectPath": "D:\\LogicWisp-Projects\\Social Media\\Entities\\SMI.Entities.csproj",
+        "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\SMI.Entities.csproj",
         "packagesPath": "C:\\Users\\Amin Ahmed\\.nuget\\packages\\",
-        "outputPath": "D:\\LogicWisp-Projects\\Social Media\\Entities\\obj\\",
+        "outputPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\LogicWisp-Projects\\Social Media\\Repository\\SMI.DataAccess.csproj": {
+    "D:\\Git\\LogicWisp Projects\\SMI.API\\Repository\\SMI.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LogicWisp-Projects\\Social Media\\Repository\\SMI.DataAccess.csproj",
+        "projectUniqueName": "D:\\Git\\LogicWisp Projects\\SMI.API\\Repository\\SMI.DataAccess.csproj",
         "projectName": "SMI.DataAccess",
-        "projectPath": "D:\\LogicWisp-Projects\\Social Media\\Repository\\SMI.DataAccess.csproj",
+        "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Repository\\SMI.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Amin Ahmed\\.nuget\\packages\\",
-        "outputPath": "D:\\LogicWisp-Projects\\Social Media\\Repository\\obj\\",
+        "outputPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\LogicWisp-Projects\\Social Media\\Entities\\SMI.Entities.csproj": {
-                "projectPath": "D:\\LogicWisp-Projects\\Social Media\\Entities\\SMI.Entities.csproj"
+              "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\SMI.Entities.csproj": {
+                "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\Entities\\SMI.Entities.csproj"
               }
             }
           }

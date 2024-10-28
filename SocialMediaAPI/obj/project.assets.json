@@ -502,11 +502,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LogicWisp-Projects\\Social Media\\SocialMediaAPI\\SMI.API.csproj",
+      "projectUniqueName": "D:\\Git\\LogicWisp Projects\\SMI.API\\SocialMediaAPI\\SMI.API.csproj",
       "projectName": "SMI.API",
-      "projectPath": "D:\\LogicWisp-Projects\\Social Media\\SocialMediaAPI\\SMI.API.csproj",
+      "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\SocialMediaAPI\\SMI.API.csproj",
       "packagesPath": "C:\\Users\\Amin Ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\LogicWisp-Projects\\Social Media\\SocialMediaAPI\\obj\\",
+      "outputPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\SocialMediaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -528,8 +528,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\LogicWisp-Projects\\Social Media\\BusinessLogic\\SMI.BusinessLogic.csproj": {
-              "projectPath": "D:\\LogicWisp-Projects\\Social Media\\BusinessLogic\\SMI.BusinessLogic.csproj"
+            "D:\\Git\\LogicWisp Projects\\SMI.API\\BusinessLogic\\SMI.BusinessLogic.csproj": {
+              "projectPath": "D:\\Git\\LogicWisp Projects\\SMI.API\\BusinessLogic\\SMI.BusinessLogic.csproj"
             }
           }
         }
