@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "N/BrTXuk3VY2RZ0i3VVoVhK5+JeWhm53+8cluZc/sVQ=",
+  "Source": "SMI.API",
+  "BasePath": "_content/SMI.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
