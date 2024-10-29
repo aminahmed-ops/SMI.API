@@ -10,3 +10,5 @@
 /.vs/SMI.API/v17/.futdcache.v2
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
+/SMI.DataAccess/obj/Debug/net8.0/SMI.DataAccess.AssemblyInfo.cs
+/SMI.DataAccess/obj/Debug/net8.0/SMI.DataAccess.AssemblyInfoInputs.cache
