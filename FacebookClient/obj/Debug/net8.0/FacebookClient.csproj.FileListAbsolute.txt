@@ -1,0 +1,12 @@
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\bin\Debug\net8.0\FacebookClient.deps.json
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\bin\Debug\net8.0\FacebookClient.dll
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\bin\Debug\net8.0\FacebookClient.pdb
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\FacebookClient.GeneratedMSBuildEditorConfig.editorconfig
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\FacebookClient.AssemblyInfoInputs.cache
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\FacebookClient.AssemblyInfo.cs
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\FacebookClient.csproj.CoreCompileInputs.cache
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\FacebookClient.sourcelink.json
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\FacebookClient.dll
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\refint\FacebookClient.dll
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\FacebookClient.pdb
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\FacebookClient\obj\Debug\net8.0\ref\FacebookClient.dll
