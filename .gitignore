@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/SMI.API/FileContentIndex
+/.vs/ProjectEvaluation
+/.vs/SMI.API/DesignTimeBuild
+/.vs/SMI.API/v17/.suo
+/.vs/SMI.API/v17/.wsuo
+/.vs/SMI.API/v17/.futdcache.v2
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
