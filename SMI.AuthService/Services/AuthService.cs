@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using SMI.AuthService.Interfaces;
 using SMI.AuthService.Interfaces.Facebook;
+using SMI.DataAccess.Context;
 using SMI.Entities.DTOs;
 using SMI.Entities.Entities;
 using SMI.Util.Configuration;
@@ -22,17 +23,19 @@ namespace SMI.AuthService.Services
     /// <seealso cref="SMI.AuthService.Services.IAuthService" />
     public class AuthService : IAuthService
     {
-        //private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
         //private readonly IGoogleAuthService _googleAuthService;
         private readonly IFacebookAuthService _facebookAuthService;
         private readonly UserManager<User> _userManager;
         private readonly Jwt _jwt;
 
         public AuthService(
+            ApplicationDbContext context,
             IFacebookAuthService facebookAuthService,
            UserManager<User> userManager,
             IOptions<Jwt> jwt)
         {
+            _context = context;
             _facebookAuthService = facebookAuthService;
             _userManager = userManager;
             _jwt = jwt.Value;
@@ -56,28 +59,39 @@ namespace SMI.AuthService.Services
             if (userInfo.Errors.Any())
                 return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
 
-            var userToBeCreated = new CreateUserFromSocialLogin
+            //var userToBeCreated = new CreateUserFromSocialLogin
+            //{
+            //    FirstName = userInfo.Data.FirstName,
+            //    LastName = userInfo.Data.LastName,
+            //    Email = userInfo.Data.Email,
+            //    ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
+            //    LoginProviderSubject = userInfo.Data.Id,
+            //};
+            //userToBeCreated.Email = "cap.kumail@gmail.com";
+            ////var abc = LoginProvider.Facebook.ToString().ToUpper();
+            //var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
+
+            var user = new User
             {
                 FirstName = userInfo.Data.FirstName,
                 LastName = userInfo.Data.LastName,
                 Email = userInfo.Data.Email,
                 ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
-                LoginProviderSubject = userInfo.Data.Id,
+            
             };
+            user.Email = "cap.kumail@gmail.com";
 
-            //var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
+            if (user is not null)
+            {
+                var jwtResponse = CreateJwtToken(user);
 
-            //if (user is not null)
-            //{
-            //    var jwtResponse = CreateJwtToken(user);
+                var data = new JwtResponseVM
+                {
+                    Token = jwtResponse,
+                };
 
-            //    var data = new JwtResponseVM
-            //    {
-            //        Token = jwtResponse,
-            //    };
-
-            //    return new BaseResponse<JwtResponseVM>(data);
-            //}
+                return new BaseResponse<JwtResponseVM>(data);
+            }
 
             return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
 
@@ -105,28 +119,35 @@ namespace SMI.AuthService.Services
                     if (userInfo.Errors.Any())
                         return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
 
-                    var userToBeCreated = new CreateUserFromSocialLogin
+                    //var userToBeCreated = new CreateUserFromSocialLogin
+                    //{
+                    //    FirstName = userInfo.Data.FirstName,
+                    //    LastName = userInfo.Data.LastName,
+                    //    Email = userInfo.Data.Email,
+                    //    ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
+                    //    LoginProviderSubject = userInfo.Data.Id,
+                    //};
+                    //userToBeCreated.Email = "cap.kumail@gmail.com";
+                    //var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
+                    var user = new User
                     {
                         FirstName = userInfo.Data.FirstName,
                         LastName = userInfo.Data.LastName,
                         Email = userInfo.Data.Email,
                         ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
-                        LoginProviderSubject = userInfo.Data.Id,
+                        Id = 1
                     };
+                    if (user is not null)
+                    {
+                        var jwtResponse = CreateJwtToken(user);
 
-                    //var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
+                        var data = new JwtResponseVM
+                        {
+                            Token = jwtResponse,
+                        };
 
-                    //if (user is not null)
-                    //{
-                    //    var jwtResponse = CreateJwtToken(user);
-
-                    //    var data = new JwtResponseVM
-                    //    {
-                    //        Token = jwtResponse,
-                    //    };
-
-                    //    return new BaseResponse<JwtResponseVM>(data);
-                    //}
+                        return new BaseResponse<JwtResponseVM>(data);
+                    }
 
                     return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
                 }

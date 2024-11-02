@@ -7,7 +7,7 @@ using SMI.Util.Response;
 
 namespace SMI.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class AuthenticationController : BaseController
     {

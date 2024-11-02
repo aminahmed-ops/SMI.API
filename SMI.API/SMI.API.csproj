@@ -8,13 +8,22 @@
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="3.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SMI.AuthService\SMI.AuthService.csproj" />
+    <ProjectReference Include="..\SMI.DataAccess\SMI.DataAccess.csproj" />
     <ProjectReference Include="..\SMI.Entities\SMI.Entities.csproj" />
     <ProjectReference Include="..\SMI.Util\SMI.Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
