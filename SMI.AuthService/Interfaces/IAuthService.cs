@@ -10,6 +10,7 @@ namespace SMI.AuthService.Interfaces
 {
     public interface IAuthService
     {
-        Task<BaseResponse<JwtResponseVM>> TokenAuthenticationWithFacebook(FacebookSignInVM model);
+        Task<BaseResponse<JwtResponseVM>> SignInWithFacebook(FacebookSignInVM model);
+        Task<BaseResponse<JwtResponseVM>> SignInWithSocialMedia(SocialMediaVM model);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using IdentityModel;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using SMI.AuthService.Interfaces;
@@ -6,36 +7,34 @@ using SMI.AuthService.Interfaces.Facebook;
 using SMI.Entities.DTOs;
 using SMI.Entities.Entities;
 using SMI.Util.Configuration;
+using SMI.Util.Enum;
 using SMI.Util.Response;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SMI.AuthService.Services
 {
     /// <summary>
     /// Class Auth Service.
-    /// Implements the <see cref="SocialAuthentication.Interfaces.IAuthService" />
+    /// Implements the <see cref="SMI.AuthService.Services.IAuthService" />
     /// </summary>
-    /// <seealso cref="SocialAuthentication.Interfaces.IAuthService" />
+    /// <seealso cref="SMI.AuthService.Services.IAuthService" />
     public class AuthService : IAuthService
     {
         //private readonly ApplicationDbContext _context;
         //private readonly IGoogleAuthService _googleAuthService;
         private readonly IFacebookAuthService _facebookAuthService;
-        //private readonly UserManager<User> _userManager;
+        private readonly UserManager<User> _userManager;
         private readonly Jwt _jwt;
 
         public AuthService(
             IFacebookAuthService facebookAuthService,
-          
+           UserManager<User> userManager,
             IOptions<Jwt> jwt)
         {
             _facebookAuthService = facebookAuthService;
+            _userManager = userManager;
             _jwt = jwt.Value;
         }
 
@@ -45,7 +44,7 @@ namespace SMI.AuthService.Services
         /// </summary>
         /// <param name="model">the view model</param>
         /// <returns>Task&lt;BaseResponse&lt;JwtResponseVM&gt;&gt;</returns>
-        public async Task<BaseResponse<JwtResponseVM>> TokenAuthenticationWithFacebook(FacebookSignInVM model)
+        public async Task<BaseResponse<JwtResponseVM>> SignInWithFacebook(FacebookSignInVM model)
         {
             var validatedFbToken = await _facebookAuthService.ValidateFacebookToken(model.AccessToken);
 
@@ -66,7 +65,7 @@ namespace SMI.AuthService.Services
                 LoginProviderSubject = userInfo.Data.Id,
             };
 
-           // var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
+            //var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
 
             //if (user is not null)
             //{
@@ -81,6 +80,59 @@ namespace SMI.AuthService.Services
             //}
 
             return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
+
+        }
+
+
+        /// <summary>
+        /// Facebook SignIn
+        /// </summary>
+        /// <param name="model">the view model</param>
+        /// <returns>Task&lt;BaseResponse&lt;JwtResponseVM&gt;&gt;</returns>
+        public async Task<BaseResponse<JwtResponseVM>> SignInWithSocialMedia(SocialMediaVM model)
+        {
+            if (model != null)
+            {
+                if (model.LoginProvider == LoginProvider.Facebook)
+                {
+                    var validatedFbToken = await _facebookAuthService.ValidateFacebookToken(model.AccessToken);
+
+                    if (validatedFbToken.Errors.Any())
+                        return new BaseResponse<JwtResponseVM>(validatedFbToken.ResponseMessage, validatedFbToken.Errors);
+
+                    var userInfo = await _facebookAuthService.GetFacebookUserInformation(model.AccessToken);
+
+                    if (userInfo.Errors.Any())
+                        return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
+
+                    var userToBeCreated = new CreateUserFromSocialLogin
+                    {
+                        FirstName = userInfo.Data.FirstName,
+                        LastName = userInfo.Data.LastName,
+                        Email = userInfo.Data.Email,
+                        ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
+                        LoginProviderSubject = userInfo.Data.Id,
+                    };
+
+                    //var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
+
+                    //if (user is not null)
+                    //{
+                    //    var jwtResponse = CreateJwtToken(user);
+
+                    //    var data = new JwtResponseVM
+                    //    {
+                    //        Token = jwtResponse,
+                    //    };
+
+                    //    return new BaseResponse<JwtResponseVM>(data);
+                    //}
+
+                    return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
+                }
+            }
+            return new BaseResponse<JwtResponseVM>(null, "Error");
+
 
         }
 
