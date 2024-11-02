@@ -1,0 +1,12 @@
+D:\Source\LogicWips\SMI\SMI.Util\bin\Debug\net8.0\SMI.Util.deps.json
+D:\Source\LogicWips\SMI\SMI.Util\bin\Debug\net8.0\SMI.Util.dll
+D:\Source\LogicWips\SMI\SMI.Util\bin\Debug\net8.0\SMI.Util.pdb
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\SMI.Util.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\SMI.Util.AssemblyInfoInputs.cache
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\SMI.Util.AssemblyInfo.cs
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\SMI.Util.csproj.CoreCompileInputs.cache
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\SMI.Util.sourcelink.json
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\SMI.Util.dll
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\refint\SMI.Util.dll
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\SMI.Util.pdb
+D:\Source\LogicWips\SMI\SMI.Util\obj\Debug\net8.0\ref\SMI.Util.dll

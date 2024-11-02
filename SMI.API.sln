@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMI.DataAccess", "SMI.DataA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMI.API", "SMI.API\SMI.API.csproj", "{C64B5C12-4971-4F27-A86F-B1183EC4EBF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMI.Util", "SMI.Util\SMI.Util.csproj", "{8CF8F0A3-1726-413D-B1CC-10740009707D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMI.AuthService", "SMI.AuthService\SMI.AuthService.csproj", "{4F1E0F0D-8E58-429E-8874-9609C8C2037E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C64B5C12-4971-4F27-A86F-B1183EC4EBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C64B5C12-4971-4F27-A86F-B1183EC4EBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C64B5C12-4971-4F27-A86F-B1183EC4EBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF8F0A3-1726-413D-B1CC-10740009707D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF8F0A3-1726-413D-B1CC-10740009707D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF8F0A3-1726-413D-B1CC-10740009707D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF8F0A3-1726-413D-B1CC-10740009707D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1E0F0D-8E58-429E-8874-9609C8C2037E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1E0F0D-8E58-429E-8874-9609C8C2037E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1E0F0D-8E58-429E-8874-9609C8C2037E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1E0F0D-8E58-429E-8874-9609C8C2037E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
