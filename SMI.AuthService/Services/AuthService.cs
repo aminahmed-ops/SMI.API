@@ -119,24 +119,24 @@ namespace SMI.AuthService.Services
                     if (userInfo.Errors.Any())
                         return new BaseResponse<JwtResponseVM>(null, userInfo.Errors);
 
-                    //var userToBeCreated = new CreateUserFromSocialLogin
-                    //{
-                    //    FirstName = userInfo.Data.FirstName,
-                    //    LastName = userInfo.Data.LastName,
-                    //    Email = userInfo.Data.Email,
-                    //    ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
-                    //    LoginProviderSubject = userInfo.Data.Id,
-                    //};
-                    //userToBeCreated.Email = "cap.kumail@gmail.com";
-                    //var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
-                    var user = new User
+                    var userToBeCreated = new CreateUserFromSocialLogin
                     {
                         FirstName = userInfo.Data.FirstName,
                         LastName = userInfo.Data.LastName,
                         Email = userInfo.Data.Email,
                         ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
-                        Id = 1
+                        LoginProviderSubject = userInfo.Data.Id,
                     };
+                    userToBeCreated.Email = "cap.kumail@gmail.com";
+                    var user = await _userManager.CreateUserFromSocialLogin(_context, userToBeCreated, LoginProvider.Facebook);
+                    //var user = new User
+                    //{
+                    //    FirstName = userInfo.Data.FirstName,
+                    //    LastName = userInfo.Data.LastName,
+                    //    Email = userInfo.Data.Email,
+                    //    ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
+                    //    Id = 1
+                    //};
                     user.Email = "cap.kumail@gmail.com";
                     if (user is not null)
                     {
