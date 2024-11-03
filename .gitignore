@@ -115,3 +115,10 @@
 /SMI.BusinessLogic/obj/SMI.BusinessLogic.csproj.nuget.g.props
 /SMI.Entities/bin/Debug/net8.0/SMI.Entities.dll
 /SMI.Entities/bin/Debug/net8.0/SMI.Entities.pdb
+/SMI.AuthService/obj/Debug/net8.0/SMI.AuthService.AssemblyInfo.cs
+/SMI.AuthService/obj/Debug/net8.0/SMI.AuthService.AssemblyInfoInputs.cache
+/SMI.AuthService/obj/Debug/net8.0/SMI.AuthService.csproj.AssemblyReference.cache
+/SMI.AuthService/obj/Debug/net8.0/SMI.AuthService.GeneratedMSBuildEditorConfig.editorconfig
+/SMI.Util/obj/Debug/net8.0/SMI.Util.AssemblyInfo.cs
+/SMI.Util/obj/Debug/net8.0/SMI.Util.AssemblyInfoInputs.cache
+/SMI.Util/obj/Debug/net8.0/SMI.Util.GeneratedMSBuildEditorConfig.editorconfig
