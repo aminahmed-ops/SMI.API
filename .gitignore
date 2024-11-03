@@ -177,3 +177,5 @@
 /SMI.Util/obj/Debug/net8.0/SMI.Util.AssemblyInfo.cs
 /SMI.Util/obj/Debug/net8.0/SMI.Util.AssemblyInfoInputs.cache
 /SMI.Util/obj/Debug/net8.0/SMI.Util.GeneratedMSBuildEditorConfig.editorconfig
+/SMI.AuthService/obj/SMI.AuthService.csproj.nuget.g.props
+/SMI.Util/obj/SMI.Util.csproj.nuget.g.props
