@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SMI.AuthService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c96b3b1315f61a406cd81c7590681d09126db689")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aef1972a4270897bde6e00fe9313e8b058eaf02")]
 [assembly: System.Reflection.AssemblyProductAttribute("SMI.AuthService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SMI.AuthService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

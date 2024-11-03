@@ -33,7 +33,7 @@ namespace SMI.AuthService
                 if (user is not null)
                 return user; //USER ALREADY EXISTS.
 
-            //user = await userManager.FindByEmailAsync(model.Email);
+            user = await userManager.FindByEmailAsync(model.Email);
 
             if (user is null)
             {
@@ -60,7 +60,7 @@ namespace SMI.AuthService
             {
                 case LoginProvider.Google:
                     {
-                        userLoginInfo = new UserLoginInfo(LoginProvider.Facebook.ToString(), model.LoginProviderSubject, LoginProvider.Facebook.ToString().ToUpper());
+                        userLoginInfo = new UserLoginInfo(LoginProvider.Google.ToString(), model.LoginProviderSubject, LoginProvider.Google.ToString().ToUpper());
                     }
                     break;
                 case LoginProvider.Facebook:
