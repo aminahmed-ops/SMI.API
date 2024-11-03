@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "SMI.API.Controllers.AuthenticationController",
+    "Method": "FacebookCallback",
+    "RelativePath": "api/Authentication/FacebookCallback/facebook-callback",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "state",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMI.API.Controllers.AuthenticationController",
     "Method": "FacebookSignIn",
     "RelativePath": "api/Authentication/FacebookSignIn",
     "HttpMethod": "POST",
@@ -24,6 +40,16 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "SMI.API.Controllers.AuthenticationController",
+    "Method": "LoginWithFacebook",
+    "RelativePath": "api/Authentication/LoginWithFacebook/login-facebook",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SMI.API.Controllers.AuthenticationController",

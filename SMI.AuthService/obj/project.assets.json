@@ -3398,7 +3398,6 @@
       "Microsoft.IdentityModel.Tokens >= 8.1.2",
       "SMI.DataAccess >= 1.0.0",
       "SMI.Entities >= 1.0.0",
-      "SMI.Util >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 8.1.2",
       "log4net >= 3.0.2"
     ]
@@ -3445,9 +3444,6 @@
             },
             "D:\\Source\\LogicWips\\SMI\\SMI.Entities\\SMI.Entities.csproj": {
               "projectPath": "D:\\Source\\LogicWips\\SMI\\SMI.Entities\\SMI.Entities.csproj"
-            },
-            "D:\\Source\\LogicWips\\SMI\\SMI.Util\\SMI.Util.csproj": {
-              "projectPath": "D:\\Source\\LogicWips\\SMI\\SMI.Util\\SMI.Util.csproj"
             }
           }
         }
