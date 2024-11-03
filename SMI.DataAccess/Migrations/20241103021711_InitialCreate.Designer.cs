@@ -12,7 +12,7 @@ using SMI.DataAccess.Context;
 namespace SMI.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241103020503_InitialCreate")]
+    [Migration("20241103021711_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

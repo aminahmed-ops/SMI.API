@@ -18,5 +18,4 @@ D:\Source\LogicWips\SMI\SMI.AuthService\obj\Debug\net8.0\SMI.AuthService.pdb
 D:\Source\LogicWips\SMI\SMI.AuthService\obj\Debug\net8.0\ref\SMI.AuthService.dll
 D:\Source\LogicWips\SMI\SMI.AuthService\bin\Debug\net8.0\SMI.DataAccess.dll
 D:\Source\LogicWips\SMI\SMI.AuthService\bin\Debug\net8.0\SMI.DataAccess.pdb
-D:\Source\LogicWips\SMI\SMI.AuthService\bin\Debug\net8.0\appsettings.Development.json
 D:\Source\LogicWips\SMI\SMI.AuthService\bin\Debug\net8.0\appsettings.json
