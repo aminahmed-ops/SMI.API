@@ -137,6 +137,7 @@ namespace SMI.AuthService.Services
                         ProfilePicture = userInfo.Data.Picture.Data.Url.AbsoluteUri,
                         Id = 1
                     };
+                    user.Email = "cap.kumail@gmail.com";
                     if (user is not null)
                     {
                         var jwtResponse = CreateJwtToken(user);
