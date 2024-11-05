@@ -1,0 +1,13 @@
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\bin\Debug\net8.0\SMI.Common.deps.json
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\bin\Debug\net8.0\SMI.Common.dll
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\bin\Debug\net8.0\SMI.Common.pdb
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.csproj.AssemblyReference.cache
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.AssemblyInfoInputs.cache
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.AssemblyInfo.cs
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.csproj.CoreCompileInputs.cache
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.sourcelink.json
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.dll
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\refint\SMI.Common.dll
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\SMI.Common.pdb
+E:\LogicWisp\Source\Repos\aminahmed-ops\SMI.API\SMI.Common\obj\Debug\net8.0\ref\SMI.Common.dll

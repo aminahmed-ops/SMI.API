@@ -2,7 +2,7 @@
 using SMI.DataAccess.Context;
 using SMI.Entities.DTOs;
 using SMI.Entities.Entities;
-using SMI.Util.Enum;
+using SMI.Common.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -9,7 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SMI.DataAccess\SMI.DataAccess.csproj" />
     <ProjectReference Include="..\SMI.Entities\SMI.Entities.csproj" />
-    <ProjectReference Include="..\SMI.Util\SMI.Util.csproj" />
+    <ProjectReference Include="..\SMI.Common\SMI.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

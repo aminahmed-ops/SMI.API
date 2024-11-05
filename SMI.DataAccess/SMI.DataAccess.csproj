@@ -30,4 +30,8 @@
     <ProjectReference Include="..\SMI.Entities\SMI.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\" />
+  </ItemGroup>
+
 </Project>

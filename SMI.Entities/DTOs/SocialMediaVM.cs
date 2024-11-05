@@ -1,4 +1,4 @@
-﻿using SMI.Util.Enum;
+﻿using SMI.Common.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

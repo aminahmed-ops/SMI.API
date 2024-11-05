@@ -14,6 +14,7 @@ namespace SMI.DataAccess.Context
 {
     public class ApplicationDbContext : IdentityDbContext<User, Role, long, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
     {
+        public DbSet<Provider> Providers { get; set; }
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }

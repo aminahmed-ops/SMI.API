@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SMI.Common.Response;
 
 namespace SMI.Entities.DTOs
 {
-    public class JwtResponseVM
+    public class JwtResponseVM : BaseResponse<JwtResponseVM> 
     {
         public string Token { get; set; }
     }

@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SMI.Util\SMI.Util.csproj" />
+    <ProjectReference Include="..\SMI.Common\SMI.Common.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\SMI.API.props" />
-</Project>

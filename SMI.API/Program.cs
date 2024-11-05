@@ -1,20 +1,14 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using SMI.AuthService.Interfaces;
-using SMI.AuthService.Interfaces.Facebook;
-using SMI.AuthService.Services;
-using SMI.AuthService.Services.Facebook;
 using SMI.DataAccess.Context;
 using SMI.Entities.Entities;
-using SMI.Util.Configuration;
-using System.Text;
+using SMI.BusinessLogic.Areas.Authentication.Services;
+using SMI.Common.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+var config = builder.Configuration;
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -40,48 +34,9 @@ builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
     options.TokenLifespan = TimeSpan.FromHours(24);
 });
 
-
-
-
-builder.Services.AddScoped<IFacebookAuthService, FacebookAuthService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
-
-builder.Services.Configure<FacebookAuthConfig>(builder.Configuration.GetSection("Facebook"));
-
-builder.Services.AddHttpClient("Facebook", c =>
-{
-    c.BaseAddress = new Uri(builder.Configuration.GetValue<string>("Facebook:BaseUrl"));
-});
-
-var jwtSection = builder.Configuration.GetSection("JWT");
-builder.Services.Configure<Jwt>(jwtSection);
-
-var appSettings = jwtSection.Get<Jwt>();
-var secret = Encoding.ASCII.GetBytes(appSettings.Secret);
-
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-
-}).AddJwtBearer(o =>
-{
-    o.RequireHttpsMetadata = true;
-    o.SaveToken = true;
-    o.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidIssuer = appSettings.ValidIssuer,
-        ValidAudience = appSettings.ValidAudience,
-        ValidateIssuerSigningKey = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ClockSkew = TimeSpan.Zero,
-        RequireExpirationTime = true,
-        IssuerSigningKey = new SymmetricSecurityKey(secret)
-    };
-
-});
+builder.Services.AddSocialMediaClient(config);
+builder.Services.AddSMIAuthentication(config);
 
 var app = builder.Build();
 

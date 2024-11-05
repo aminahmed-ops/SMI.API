@@ -3,14 +3,8 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using SMI.AuthService.Interfaces.Facebook;
 using SMI.Entities.DTOs.FacebookAuthentication;
-using SMI.Util.Configuration;
-using SMI.Util.Response;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+using SMI.Common.Configuration;
+using SMI.Common.Response;
 
 namespace SMI.AuthService.Services.Facebook
 {
@@ -23,12 +17,12 @@ namespace SMI.AuthService.Services.Facebook
     {
 
         private readonly HttpClient _httpClient;
-        private readonly FacebookAuthConfig _facebookAuthConfig;
+        private readonly FacebookClientSettings _facebookAuthConfig;
         private readonly ILog _logger;
 
         public FacebookAuthService(
             IHttpClientFactory httpClientFactory,
-            IOptions<FacebookAuthConfig> facebookAuthConfig)
+            IOptions<FacebookClientSettings> facebookAuthConfig)
         {
             _httpClient = httpClientFactory.CreateClient("Facebook");
             _facebookAuthConfig = facebookAuthConfig.Value;

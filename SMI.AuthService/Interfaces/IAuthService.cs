@@ -1,5 +1,5 @@
 ﻿using SMI.Entities.DTOs;
-using SMI.Util.Response;
+using SMI.Common.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
